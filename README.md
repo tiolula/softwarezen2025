@@ -19,9 +19,9 @@ Ele tem todos os arquivos necessários para você, junto com seu grupo, começar
 
 um dos objetivos desse Dojo é que vocês pratiquem TDD. Dessa forma, todo o desenvolvimento deve ser feito de acordo com os seguintes passos sequenciais:
 
-1. 🔴 Escrever um teste (bem escrito) e rodar para vê-lo **falhar**, dado que é uma funcionalidade ainda não implementada
-2. 🟢 Escrever a solução mínima e rodar os testes para vê-los passar, afinal é a solução (mínima)
-3. 🟢 Melhorar o código e rodar os testes para vê-los passar novamente, afinal vocês melhoraram (e não pioraram) o código
+1. 🔴 Escrever um teste (bem escrito) no `test_calculadora.py` e rodar para vê-lo **falhar**, dado que é uma funcionalidade ainda não implementada
+2. 🟢 Escrever a solução mínima no `calculadora.py` e rodar os testes para vê-los passar, afinal é a solução (mínima)
+3. 🟢 Melhorar o código tanto do `test_calculadora.py` quanto do `calculadora.py` e rodar os testes para vê-los passar novamente, afinal vocês melhoraram (e não pioraram) o código
 4. Voltar ao passo 1
 
 ## Ludificando o rolê (gamificação)
@@ -42,9 +42,12 @@ Como é o primeiro teste escrito, a solução mínima pode ser simplesmente um `
 
 ## Mecânica do jogo
 
-- Se você encontrou um verde, levante a plaquinha verde e aguarde nossa revisão de código para que possamos te dar um novo teste para escrever
+- 🟢 Se você encontrou um verde, levante a plaquinha verde e aguarde nossa revisão de código para que possamos te dar um novo teste para escrever
 
-- Se você escreveu um teste e encontrou um vermelho, levante a plaquinha vermelha e aguarde nossa revisão de código para te darmos um ponto
+- 🔴 Se você escreveu um novo teste e encontrou um vermelho, levante a plaquinha vermelha e aguarde nossa revisão de código para te darmos um ponto
+
+**Dica**: O pulo do gato está em dar passinhos pequenos quando for escrever a solução mínima no `calculadora.py` pro teste da vez. Se você escrever uma solução muito maior do que o teste pede, provavelmente o próximo teste não dará vermelho quando for escrito. 😉
+
 
 ## Regras de Negócio
 
@@ -52,7 +55,7 @@ Em meio às ondas de lay-off, queremos ajudar pessoas trabalhadoras desse nosso 
 
 O nosso programa deve, com base em quanto dinheiro a pessoa tem guardado e o custo de vida mensal dela, fazer o cálculo de por quantos meses ela pode tocar o foda-se e ficar na vida boa sem trabalhar.
 
-Ou seja: Meses de foda-se = dinheiro do foda-se guardado / custo de vida mensal
+Ou seja: Meses de foda-se = dinheiro guardado / custo de vida mensal
 
 A tabelinha abaixo mostra exemplos desse cálculo.
 
@@ -63,9 +66,34 @@ A tabelinha abaixo mostra exemplos desse cálculo.
 | R$100.000,00                   | R$25.000               | 4                  |
 | R$20.000,00                    | R$10.000               | 2                  |
 
-> ⚠️ Importante: O número de meses deve ser sempre arredondado para baixo!
-
+**⚠️ Importante:** O número de meses deve ser sempre arredondado para baixo!
 
 ## Nosso desafio
 
 Não nos preocuparemos com interface de usuário nesse momento. O desafio aqui é construir a calculadora que dirá, a partir do dinheiro guardado e do custo de vida mensal informados, quantos meses de foda-se a pessoa tem. :)
+
+## Bônus (só leia se já acabou o desafio proposto até aqui)
+
+Se você implementou todos os testes propostos pelas Regras de Negócio, sua missão agora é partir para o bônus!
+
+Ele é dividido em duas partes:
+
+### Parte 1
+
+Você deve, ainda no arquivo `calculadora.py`, implementar uma função que retorne a seguinte frase após receber os parâmetros de  Dinheiro Guardado e o Custo de Vida Mensal e calcular (utilizando a função já implementada) o tempo de foda-se:
+
+`Você tem X meses pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
+
+Sendo que X deve ser o retorno da função `calcular` já implementada na `calculadora.py`.
+
+**⚠️ Importante:**: atente-se ao uso da palavra "mês" no singular ou no plural ("meses"), dependendo do número de meses. A função deve retornar utilizando a palavra correta de acordo com a regra ortográfica.
+
+## Parte 2 (ULTRA HARD)
+
+Nessa parte mais tensa do bônus você deve implementar uma nova função ainda na `calculadora.py`que retorne, após receber os parâmetros de Dinheiro Guardado e Custo de Vida Mensal, o tempo decomposto em Anos, Meses e Dias.
+
+Por exemplo:
+
+- Se Dinheiro Guardado for igual a R$10.000 e o Custo de Vida Mensal for igual a R$2.300, a função deve retornar `Você tem 4 meses, 2 10 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
+
+- Se Dinheiro Guardado for igual a R$234.000 e o Custo de Vida Mensal for igual a R$3.950, a função deve retornar `Você tem 4 anos, 11 meses e 7 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
