@@ -48,6 +48,7 @@ Como é o primeiro teste escrito, a solução mínima pode ser simplesmente um `
 
 **Dica**: O pulo do gato está em dar passinhos pequenos quando for escrever a solução mínima no `calculadora.py` pro teste da vez. Se você escrever uma solução muito maior do que o teste pede, provavelmente o próximo teste não dará vermelho quando for escrito. 😉
 
+**Se liga:** Levando em conta a boa prática 1, 2, n, só serão permitidos returns fixos (tipo `return 6`) no primeiro e no segundo teste que falhar. A partir do terceiro a função deve fazer algum processamento mínimo.
 
 ## Regras de Negócio
 
@@ -94,6 +95,6 @@ Nessa parte mais tensa do bônus você deve implementar uma nova função ainda 
 
 Por exemplo:
 
-- Se Dinheiro Guardado for igual a R$10.000 e o Custo de Vida Mensal for igual a R$2.300, a função deve retornar `Você tem 4 meses, 2 10 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
+- Se Dinheiro Guardado for igual a R$10.000 e o Custo de Vida Mensal for igual a R$2.300, a função deve retornar `Você tem 4 meses e 10 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
 
 - Se Dinheiro Guardado for igual a R$234.000 e o Custo de Vida Mensal for igual a R$3.950, a função deve retornar `Você tem 4 anos, 11 meses e 7 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
