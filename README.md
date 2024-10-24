@@ -32,7 +32,6 @@ Se você está rodando esse Dojo em um workshop facilitado por alguém, esse alg
 
 3. Mesmo selecionando que o seu projeto é em Python, você vai ter que instalar o Pytest (`pip install pytest`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `pytest`.
 
-4. Que a sequência de testes está no endereço: http://dontpad.com/tdd_fodase_teste1. Não acesse antes de ler todo esse tutorial todo e entender como o rolê funciona!
 </details>
 
 ## Nosso fluxo de desenvolvimento
@@ -65,6 +64,17 @@ Como é o primeiro teste escrito, a solução mínima pode ser simplesmente um `
 - 🟢 Se você encontrou um verde, levante a plaquinha verde e aguarde nossa revisão de código para que possamos te dar um novo teste para escrever
 
 - 🔴 Se você escreveu um novo teste e encontrou um vermelho, levante a plaquinha vermelha e aguarde nossa revisão de código para te darmos um ponto
+
+<details>
+  <summary>Se você está rodando esse Dojo por conta própria expanda essa sessão aqui e veja um detalhezinho importante.</summary>
+
+Se você está rodando por conta própria, ou seja, sem pessoas facilitando o rolê pra você, provavelmente não vai rolar nem plaquinha nem revisão de código, né?
+
+Mas tatu do bem. Faz o seguinte: Contabilize seus pontos por conta própria e use a sequência de testes que está no endereço: http://dontpad.com/tdd_fodase_teste1
+
+Mesmo jogando sem facilitação é importante seguir a mecânica proposta. Não veja o teste seguinte sem ter acabado o anterior. \o/
+
+</details>
 
 **Dica**: O pulo do gato está em dar passinhos pequenos quando for escrever a solução mínima no `calculadora.py` pro teste da vez. Se você escrever uma solução muito maior do que o teste pede, provavelmente o próximo teste não dará vermelho quando for escrito. 😉
 
