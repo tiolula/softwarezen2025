@@ -15,6 +15,20 @@ Este é um Dojo para pessoas iniciantes em qualquer um dos assuntos abaixo:
 
 Ele tem todos os arquivos necessários para você, junto com seu grupo, começarem a colocar a mão no código.
 
+## Antes de começar...
+
+Esse Dojo foi pensado originalmente para ser executado no [replit](https://replit.com), uma plataforma de desenvolvimento online na qual todo mundo consegue editar o mesmo código fonte ao mesmo tempo sem ter que instalar extensões como o [Live Share](https://visualstudio.microsoft.com/pt-br/services/live-share/), caso usássemos o [Visual Studio Code](https://code.visualstudio.com).
+
+Se você está rodando esse Dojo em um workshop facilitado por alguém, esse alguém vai te passar as instruções de login e senha pra acessar o ambiente já configurado no [replit](https://replit.com). 😜
+
+Se você está rodando esse Dojo por conta própria, fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente:
+
+1. Que a versão gratuita do [replit](https://replit.com) só te permite chamar 1 pessoa pra colaborar com você. A alternativa é você compartilhar seu user e senha (nada seguro) com outras pessoas, assim vocês conseguem usar em grupos maiores.
+
+2. Dentro do [replit](https://replit.com) você vai ter que colocar a URL desse projeto (https://github.com/tiolula/tdd_fodase.git) para que ele baixe o código fonte
+
+3. Mesmo selecionando que o seu projeto é em Python, você vai ter que instalar o Pytest (`pip install pytest`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `pytest`.
+
 ## Nosso fluxo de desenvolvimento
 
 um dos objetivos desse Dojo é que vocês pratiquem TDD. Dessa forma, todo o desenvolvimento deve ser feito de acordo com os seguintes passos sequenciais:
