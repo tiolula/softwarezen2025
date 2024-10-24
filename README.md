@@ -24,7 +24,7 @@ Se você está rodando esse Dojo em um workshop facilitado por alguém, esse alg
 <details>
   <summary>Se você está rodando esse Dojo por conta própria expanda essa sessão aqui e leia as dicas.</summary>
 
-...fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente:
+Fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente:
 
 1. Que a versão gratuita do [replit](https://replit.com) só te permite chamar 1 pessoa pra colaborar com você. A alternativa é você compartilhar seu user e senha (nada seguro) com outras pessoas, assim vocês conseguem usar em grupos maiores.
 
