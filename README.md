@@ -9,7 +9,7 @@ Apesar de o nome parecer vulgar, estamos bem embasados. O nome `dinheiro do foda
 Este é um Dojo para pessoas iniciantes em qualquer um dos assuntos abaixo:
 
 - Testes automatizados
-- TDD
+- [TDD (Test Driven Development, ou Desenvolvimento Orientado a Testes)](https://pt.wikipedia.org/wiki/Test-driven_development)
 - Python
 - Programação
 
