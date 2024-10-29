@@ -1,3 +1,3 @@
 def calcular(a, b)
-    6
+    0
 end
