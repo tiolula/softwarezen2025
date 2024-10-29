@@ -10,7 +10,7 @@ Este é um Dojo para pessoas iniciantes em qualquer um dos assuntos abaixo:
 
 - Testes automatizados
 - [TDD (Test Driven Development, ou Desenvolvimento Orientado a Testes)](https://pt.wikipedia.org/wiki/Test-driven_development)
-- Python
+- Ruby
 - Programação
 
 Ele tem todos os arquivos necessários para você, junto com seu grupo, começarem a colocar a mão no código.
@@ -30,7 +30,7 @@ Fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente
 
 2. Dentro do [replit](https://replit.com) você vai ter que colocar a URL desse projeto (https://github.com/tiolula/tdd_fodase.git) para que ele baixe o código fonte
 
-3. Mesmo selecionando que o seu projeto é em Python, você vai ter que instalar o Pytest (`pip install pytest`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `pytest`.
+3. Mesmo selecionando que o seu projeto é em Ruby, você vai ter que instalar o as bibliotecas de teste (`gem install minitest minitest-reporters`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `ruby ./testes/test_calculadora.rb`.
 
 </details>
 
@@ -38,9 +38,9 @@ Fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente
 
 um dos objetivos desse Dojo é que vocês pratiquem TDD. Dessa forma, todo o desenvolvimento deve ser feito de acordo com os seguintes passos sequenciais:
 
-1. 🔴 Escrever um teste (bem escrito) no `test_calculadora.py` e rodar para vê-lo **falhar**, dado que é uma funcionalidade ainda não implementada
-2. 🟢 Escrever a solução mínima no `calculadora.py` e rodar os testes para vê-los passar, afinal é a solução (mínima)
-3. 🟢 Melhorar o código tanto do `test_calculadora.py` quanto do `calculadora.py` e rodar os testes para vê-los passar novamente, afinal vocês melhoraram (e não pioraram) o código
+1. 🔴 Escrever um teste (bem escrito) no `test_calculadora.rb` e rodar para vê-lo **falhar**, dado que é uma funcionalidade ainda não implementada
+2. 🟢 Escrever a solução mínima no `calculadora.rb` e rodar os testes para vê-los passar, afinal é a solução (mínima)
+3. 🟢 Melhorar o código tanto do `test_calculadora.rb` quanto do `calculadora.rb` e rodar os testes para vê-los passar novamente, afinal vocês melhoraram (e não pioraram) o código
 4. Voltar ao passo 1
 
 ## Ludificando o rolê (gamificação)
@@ -53,9 +53,9 @@ Caso você esteja em uma sessão facilitada pelos criadores do Dojo, muito prova
 
 O objetivo principal do jogo é conseguir escrever o máximo de testes possíveis para funcionalidades que estão previstas nas regras de negócio mas ainda não estão implementadas no código de negócio.
 
-O código do repositório já tem, por padrão, um teste que não está falhando (no arquivo `test_calculadora.py`).
+O código do repositório já tem, por padrão, um teste que não está falhando (no arquivo `test_calculadora.rb`).
 
-👉🏾 O primeiro passo é vocês alterarem o código de negócio (no arquivo `calculadora.py`) para que ele faça o que o teste está pedindo.
+👉🏾 O primeiro passo é vocês alterarem o código de negócio (no arquivo `calculadora.rb`) para que ele faça o que o teste está pedindo.
 
 Como é o primeiro teste escrito, a solução mínima pode ser simplesmente um `return 6`, por exemplo.
 
@@ -76,7 +76,7 @@ Mesmo jogando sem facilitação é importante seguir a mecânica proposta. Não 
 
 </details>
 
-**Dica**: O pulo do gato está em dar passinhos pequenos quando for escrever a solução mínima no `calculadora.py` pro teste da vez. Se você escrever uma solução muito maior do que o teste pede, provavelmente o próximo teste não dará vermelho quando for escrito. 😉
+**Dica**: O pulo do gato está em dar passinhos pequenos quando for escrever a solução mínima no `calculadora.rb` pro teste da vez. Se você escrever uma solução muito maior do que o teste pede, provavelmente o próximo teste não dará vermelho quando for escrito. 😉
 
 **Se liga:** Levando em conta a boa prática 1, 2, n, só serão permitidos returns fixos (tipo `return 6`) no primeiro e no segundo teste que falhar. A partir do terceiro a função deve fazer algum processamento mínimo.
 
@@ -111,17 +111,17 @@ Ele é dividido em duas partes:
 
 ### Parte 1
 
-Você deve, ainda no arquivo `calculadora.py`, implementar uma função que retorne a seguinte frase após receber os parâmetros de  Dinheiro Guardado e o Custo de Vida Mensal e calcular (utilizando a função já implementada) o tempo de foda-se:
+Você deve, ainda no arquivo `calculadora.rb`, implementar uma função que retorne a seguinte frase após receber os parâmetros de  Dinheiro Guardado e o Custo de Vida Mensal e calcular (utilizando a função já implementada) o tempo de foda-se:
 
 `Você tem X meses pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
 
-Sendo que X deve ser o retorno da função `calcular` já implementada na `calculadora.py`.
+Sendo que X deve ser o retorno da função `calcular` já implementada na `calculadora.rb`.
 
 **⚠️ Importante:**: atente-se ao uso da palavra "mês" no singular ou no plural ("meses"), dependendo do número de meses. A função deve retornar utilizando a palavra correta de acordo com a regra ortográfica.
 
 ## Parte 2 (ULTRA HARD)
 
-Nessa parte mais tensa do bônus você deve implementar uma nova função ainda na `calculadora.py`que retorne, após receber os parâmetros de Dinheiro Guardado e Custo de Vida Mensal, o tempo decomposto em Anos, Meses e Dias.
+Nessa parte mais tensa do bônus você deve implementar uma nova função ainda na `calculadora.rb`que retorne, após receber os parâmetros de Dinheiro Guardado e Custo de Vida Mensal, o tempo decomposto em Anos, Meses e Dias.
 
 Por exemplo:
 
