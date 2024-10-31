@@ -15,28 +15,29 @@ Este é um Dojo para pessoas iniciantes em qualquer um dos assuntos abaixo:
 
 Ele tem todos os arquivos necessários para você, junto com seu grupo, começarem a colocar a mão no código.
 
-## Antes de começar...
+## Regras de Negócio
 
-Esse Dojo foi pensado originalmente para ser executado no [replit](https://replit.com), uma plataforma de desenvolvimento online na qual todo mundo consegue editar o mesmo código fonte ao mesmo tempo sem ter que instalar extensões como o [Live Share](https://visualstudio.microsoft.com/pt-br/services/live-share/), caso usássemos o [Visual Studio Code](https://code.visualstudio.com).
+Em meio às ondas de lay-off, queremos ajudar pessoas trabalhadoras desse nosso Brasil a ter um dinheiro do foda-se para que possam viver com menos medo diante da instabilidade do mercado. Ou mesmo para que possam pedir demissão daquele chefe chato que tanto azucrina a vida.
 
-Se você está rodando esse Dojo em um workshop facilitado por alguém, esse alguém vai te passar as instruções de login e senha pra acessar o ambiente já configurado no [replit](https://replit.com). 😜
+O nosso programa deve, com base em quanto dinheiro a pessoa tem guardado e o custo de vida mensal dela, fazer o cálculo de por quantos meses ela pode tocar o foda-se e ficar na vida boa sem trabalhar.
 
-<details>
-  <summary>Se você está rodando esse Dojo por conta própria expanda essa sessão aqui e leia as dicas.</summary>
+Ou seja: Meses de foda-se = dinheiro guardado / custo de vida mensal
 
-Fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente:
+A tabelinha abaixo mostra exemplos desse cálculo.
 
-1. Que a versão gratuita do [replit](https://replit.com) só te permite chamar 1 pessoa pra colaborar com você. A alternativa é você compartilhar seu user e senha (nada seguro) com outras pessoas, assim vocês conseguem usar em grupos maiores.
+| Dinheiro guardado              | Custo de vida mensal   | Meses de foda-se   |
+|--------------------------------|------------------------|--------------------|
+| R$10.000,00                    | R$2.000                | 5                  |
+| R$50.000,00                    | R$10.000               | 5                  |
+| R$100.000,00                   | R$25.000               | 4                  |
+| R$20.000,00                    | R$10.000               | 2                  |
 
-2. Dentro do [replit](https://replit.com) você vai ter que colocar a URL desse projeto (https://github.com/tiolula/tdd_fodase.git) para que ele baixe o código fonte
+**⚠️ Importante:** O número de meses deve ser sempre arredondado para baixo!
 
-3. Mesmo selecionando que o seu projeto é em Ruby, você vai ter que instalar o as bibliotecas de teste (`gem install minitest minitest-reporters`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `ruby ./testes/test_calculadora.rb`.
-
-</details>
 
 ## Nosso fluxo de desenvolvimento
 
-um dos objetivos desse Dojo é que vocês pratiquem TDD. Dessa forma, todo o desenvolvimento deve ser feito de acordo com os seguintes passos sequenciais:
+Um dos objetivos desse Dojo é que vocês pratiquem TDD. Dessa forma, todo o desenvolvimento deve ser feito de acordo com os seguintes passos sequenciais:
 
 1. 🔴 Escrever um teste (bem escrito) no `test_calculadora.rb` e rodar para vê-lo **falhar**, dado que é uma funcionalidade ainda não implementada
 2. 🟢 Escrever a solução mínima no `calculadora.rb` e rodar os testes para vê-los passar, afinal é a solução (mínima)
@@ -80,25 +81,6 @@ Mesmo jogando sem facilitação é importante seguir a mecânica proposta. Não 
 
 **Se liga:** Levando em conta a boa prática 1, 2, n, só serão permitidos returns fixos (tipo `return 6`) no primeiro e no segundo teste que falhar. A partir do terceiro a função deve fazer algum processamento mínimo.
 
-## Regras de Negócio
-
-Em meio às ondas de lay-off, queremos ajudar pessoas trabalhadoras desse nosso Brasil a ter um dinheiro do foda-se para que possam viver com menos medo diante da instabilidade do mercado. Ou mesmo para que possam pedir demissão daquele chefe chato que tanto azucrina a vida.
-
-O nosso programa deve, com base em quanto dinheiro a pessoa tem guardado e o custo de vida mensal dela, fazer o cálculo de por quantos meses ela pode tocar o foda-se e ficar na vida boa sem trabalhar.
-
-Ou seja: Meses de foda-se = dinheiro guardado / custo de vida mensal
-
-A tabelinha abaixo mostra exemplos desse cálculo.
-
-| Dinheiro guardado              | Custo de vida mensal   | Meses de foda-se   |
-|--------------------------------|------------------------|--------------------|
-| R$10.000,00                    | R$2.000                | 5                  |
-| R$50.000,00                    | R$10.000               | 5                  |
-| R$100.000,00                   | R$25.000               | 4                  |
-| R$20.000,00                    | R$10.000               | 2                  |
-
-**⚠️ Importante:** O número de meses deve ser sempre arredondado para baixo!
-
 ## Nosso desafio
 
 Não nos preocuparemos com interface de usuário nesse momento. O desafio aqui é construir a calculadora que dirá, a partir do dinheiro guardado e do custo de vida mensal informados, quantos meses de foda-se a pessoa tem. :)
@@ -128,3 +110,22 @@ Por exemplo:
 - Se Dinheiro Guardado for igual a R$10.000 e o Custo de Vida Mensal for igual a R$2.300, a função deve retornar `Você tem 4 meses e 10 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
 
 - Se Dinheiro Guardado for igual a R$234.000 e o Custo de Vida Mensal for igual a R$3.950, a função deve retornar `Você tem 4 anos, 11 meses e 7 dias pra poder tacar o foda-se pro que quiser sem se preocupar com dinheiro!`
+
+## Se você não participou do dojo mas quer testar em casa
+
+Esse Dojo foi pensado originalmente para ser executado no [replit](https://replit.com), uma plataforma de desenvolvimento online na qual todo mundo consegue editar o mesmo código fonte ao mesmo tempo sem ter que instalar extensões como o [Live Share](https://visualstudio.microsoft.com/pt-br/services/live-share/), caso usássemos o [Visual Studio Code](https://code.visualstudio.com).
+
+Se você está rodando esse Dojo em um workshop facilitado por alguém, esse alguém vai te passar as instruções de login e senha pra acessar o ambiente já configurado no [replit](https://replit.com). 😜
+
+<details>
+  <summary>Se você está rodando esse Dojo por conta própria expanda essa sessão aqui e leia as dicas.</summary>
+
+Fique a vontade para criar uma conta no replit e experimentá-lo! Tenha em mente:
+
+1. Que a versão gratuita do [replit](https://replit.com) só te permite chamar 1 pessoa pra colaborar com você. A alternativa é você compartilhar seu user e senha (nada seguro) com outras pessoas, assim vocês conseguem usar em grupos maiores.
+
+2. Dentro do [replit](https://replit.com) você vai ter que colocar a URL desse projeto (https://github.com/tiolula/tdd_fodase.git) para que ele baixe o código fonte
+
+3. Mesmo selecionando que o seu projeto é em Ruby, você vai ter que instalar o as bibliotecas de teste (`gem install minitest minitest-reporters`) no [replit](https://replit.com), e é legal, inclusive, configurar o botão `RUN` pra executar o comando `ruby ./testes/test_calculadora.rb`.
+
+</details>
