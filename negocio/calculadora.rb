@@ -1,3 +1,3 @@
-def calcular(a, b)
+def calcular(valor, custo)
     0
 end

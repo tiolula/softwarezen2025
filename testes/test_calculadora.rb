@@ -5,7 +5,7 @@ require "minitest/reporters"
 Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 class TestesDaCalculadora < Minitest::Test
-  def test_fodase_por_6_meses
+  def test_fdse_por_6_meses
     valor_guardado = 6000
     custo_mensal = 1000
     qtd_de_meses_esperada = 6
