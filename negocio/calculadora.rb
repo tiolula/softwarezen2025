@@ -1,3 +1,3 @@
-def calcular(valor, custo)
-    0
+def calcular(valor_guardado, custo_mensal)
+    valor_guardado / custo_mensal   
 end
