@@ -1,0 +1,37 @@
+# Nome do workflow (vai aparecer na aba "Actions" do GitHub)
+name: Testes Automatizados
+
+# Evento que dispara o workflow — neste caso, a cada push em qualquer branch
+on:
+  push:
+
+jobs:
+  ruby-tests: # Nome do job
+    runs-on: ubuntu-latest # Sistema operacional onde o job será executado
+
+    steps:
+      # Passo 1: Clonar o repositório atual para a máquina virtual
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      # Passo 2: Instalar o Ruby e configurar o ambiente
+      - name: Instalar Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Versão do Ruby (ajuste se usar outra)
+          bundler-cache: true # Se houver Gemfile.lock, usa cache do bundler para acelerar
+
+      # Passo 3: Instalar dependências do projeto e gems de teste
+      - name: Instalar dependências do projeto
+        run: |
+          # Se existir um Gemfile, instala as dependências do projeto
+          if [ -f "Gemfile" ]; then
+            bundle install
+          fi
+
+          # Instala as gems usadas para os testes
+          gem install minitest minitest-reporters
+
+      # Passo 4: Executar os testes
+      - name: Executar testes
+        run: ruby ./testes/test_calculadora.rb # Caminho do seu arquivo de teste
